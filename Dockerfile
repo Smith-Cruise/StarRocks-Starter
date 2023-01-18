@@ -1,13 +1,13 @@
 FROM centos:centos7
 
-ENV STARROCKS_VERSION 2.2.1
+ENV STARROCKS_VERSION 2.5.0-rc03
 
 # Install relevant tools.
 RUN yum -y install wget mysql net-tools telnet
 
 # Prepare StarRocks Installer.
 RUN mkdir -p /data/deploy/
-RUN wget -O /data/deploy/StarRocks-${STARROCKS_VERSION}.tar.gz https://download.starrocks.com/zh-CN/download/request-download/30/StarRocks-${STARROCKS_VERSION}.tar.gz
+RUN wget -O /data/deploy/StarRocks-${STARROCKS_VERSION}.tar.gz https://releases.starrocks.io/starrocks/StarRocks-${STARROCKS_VERSION}.tar.gz
 RUN cd /data/deploy/ && tar zxf StarRocks-${STARROCKS_VERSION}.tar.gz && rm StarRocks-${STARROCKS_VERSION}.tar.gz
 
 # Install Java JDK.
