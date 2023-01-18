@@ -3,10 +3,10 @@ Start learning StarRocks with one click based on Docker!
 
 ## Steps
 
-1. Run StarRocks container (run in latest version `2.2.1`):
+1. Run StarRocks container (run in latest version `2.5.0-rc03`):
 
 ```shell
-docker run -p 9030:9030 -p 8030:8030 -p 8040:8040 --privileged=true -d --name starrocks-starter d87904488/starrocks-starter:2.2.1
+docker run -p 9030:9030 -p 8030:8030 -p 8040:8040 --privileged=true -d --name starrocks-starter d87904488/starrocks-starter:2.5.0-rc03
 ```
 
 2. Access StarRocks using mysql client:
