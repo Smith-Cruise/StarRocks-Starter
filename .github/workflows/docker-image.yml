@@ -1,7 +1,7 @@
 name: StarRocks Docker Images CI
 
 env:
-  STARROCKS_VERSION: 2.5.0
+  STARROCKS_VERSION: 2.5.2
 
 on:
   push:
