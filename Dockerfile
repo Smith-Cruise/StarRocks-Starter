@@ -1,6 +1,6 @@
 FROM centos:centos7
 
-ENV STARROCKS_VERSION 2.5.0
+ENV STARROCKS_VERSION 2.5.2
 
 # Install relevant tools.
 RUN yum -y install wget mysql net-tools telnet
